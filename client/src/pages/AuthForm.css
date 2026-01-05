@@ -1,0 +1,23 @@
+/* client/src/pages/AuthForm.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a1929; /* Dark background */
+}
+
+.auth-form {
+  background-color: #112240; /* Dark card background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #233554;
+}
+
+.auth-form h2 {
+  color: #64ffda; /* Accent color */
+  font-weight: bold;
+}

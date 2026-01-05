@@ -1,0 +1,35 @@
+/* client/src/pages/LearningPathPage.css */
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.challenge-card-wrapper {
+  height: 100%;
+}
+
+.challenge-card {
+  background: #112240;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(59, 59, 59, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  height: 30%;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.grand-quiz-card-wrapper {
+    grid-column: span 2;
+    height: 100%;
+}

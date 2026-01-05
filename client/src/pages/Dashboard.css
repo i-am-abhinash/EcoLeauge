@@ -1,0 +1,79 @@
+/* client/src/pages/Dashboard.css */
+.dashboard-container {
+  font-family: sans-serif;
+  background-color: #0a1929; /* Changed to dark background */
+  min-height: 100vh;
+}
+.dashboard-main {
+  padding: 2rem;
+}
+.dashboard-main h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ccd6f6; /* Changed to light color */
+}
+/* This is the updated grid layout */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.subject-card-wrapper {
+  height: 100%;
+}
+.subject-card {
+  background: #112240; /* Changed to dark card background */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  height: 50%;
+}
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.subject-card .emoji {
+  font-size: 3rem;
+}
+.subject-card h3 {
+  margin: 1rem 0;
+  color: #ccd6f6; /* Changed to light color */
+  flex-grow: 1;
+}
+.subject-card p {
+    color: #64ffda; /* Changed to accent color */
+    flex-grow: 1;
+}
+.subject-card.locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.badges-section {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+  background: #112240; /* Changed to dark card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.badge-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.badge {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}

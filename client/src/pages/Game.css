@@ -1,0 +1,160 @@
+/* client/src/pages/Game.css */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  background: #0a1929;
+  color: #ccd6f6;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.game-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #64ffda;
+  margin: 1rem 0;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background: #112240;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #233554;
+}
+
+.game-area {
+  width: 100%;
+  max-width: 800px;
+  height: 70vh;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-area { 
+  flex-grow: 1; 
+  position: relative; 
+  max-height: calc(70vh - 100px); /* leave space for bins */
+}
+
+.waste-item {
+  position: absolute;
+  padding: 0.75rem 1.25rem;
+  background: #112240;
+  color: #ccd6f6;
+  border-radius: 8px;
+  user-select: none;
+  font-size: 1.2rem;
+  border: 1px solid #233554;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.bin-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: rgba(17, 34, 64, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.bin {
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a1929;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bin:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.bin.wet { background-color: #04844b; }
+.bin.dry { background-color: #0052cc; }
+
+.result-screen {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center; 
+  align-items:center; 
+  height:100vh; 
+  width:100%; 
+  background-color:#0a1929; 
+  color:#fff; 
+  font-family:sans-serif;
+}
+
+.game-result { 
+  font-size: 3rem; 
+  font-weight: bold; 
+  margin-bottom: 2rem; 
+  color: #64ffda;
+}
+
+.start-button { 
+  padding: 1rem 2rem; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  border: none; 
+  border-radius: 8px; 
+  background-color: #64ffda; 
+  color: #0a1929; 
+  margin-top: 1rem; 
+  font-weight: 700; 
+}
+
+.instructions-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 41, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.instructions-content {
+  background: #112240;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  border: 1px solid #233554;
+  max-width: 600px;
+}
+
+.instructions-content h4 {
+  color: #64ffda;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.instructions-content ol {
+  text-align: left;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .game-header { font-size: 2rem; }
+  .game-stats { font-size: 1.2rem; }
+  .bin { padding: 1rem 2rem; font-size: 1rem; }
+  .waste-item { font-size: 1rem; padding: 0.5rem 1rem; }
+}

@@ -1,0 +1,65 @@
+/* client/src/pages/RecycleFlowGame.css */
+
+.recycling-flow-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.flow-item {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    background: #112240;
+    color: #ccd6f6;
+    border-radius: 8px;
+    border: 1px solid #233554;
+}
+
+.flow-path {
+    background: #112240;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    max-width: 600px;
+    width: 100%;
+}
+
+.flow-question {
+    font-size: 1.5rem;
+    color: #ccd6f6;
+    margin-bottom: 1.5rem;
+}
+
+.junction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.junction button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #64ffda;
+    color: #0a1929;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.junction button:hover {
+    background-color: #52c7b3;
+}
+
+.feedback {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #64ffda;
+}
