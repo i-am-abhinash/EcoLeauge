@@ -40,8 +40,8 @@ Ecolauge addresses this by introducing gamification into environmental education
 
 ##  Project Structure
 Ecolauge/
-│── src/  
-│── assets/  
+│── client/  
+│── server/  
 │── README.md  
 
 ---
